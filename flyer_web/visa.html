@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Visa Assistance</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Segoe UI, sans-serif;
+    background:#f5f5f5;
+}
+
+header{
+
+background:linear-gradient(90deg,#0D3B66,#3CA55C);
+padding:18px;
+color:white;
+text-align:center;
+font-size:28px;
+font-weight:bold;
+
+}
+
+.hero{
+
+padding:60px 20px;
+text-align:center;
+background:#EAF8F1;
+
+}
+
+.hero h2{
+
+font-size:40px;
+color:#0D3B66;
+margin-bottom:15px;
+
+}
+
+.hero p{
+
+font-size:18px;
+color:#555;
+
+}
+
+.country-grid{
+
+width:90%;
+max-width:1200px;
+margin:50px auto;
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+
+}
+
+.country{
+    position: relative;
+    height: 220px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: .4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,.15);
+}
+
+.country::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    transition:.4s;
+}
+
+.country:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.country:hover::before{
+    background:rgba(0,0,0,.25);
+}
+
+.country-content{
+    position:relative;
+    z-index:2;
+}
+
+.country h3{
+    margin-bottom:10px;
+    font-size:28px;
+}
+
+.country p{
+    color:#fff;
+    font-size:16px;
+}
+
+footer{
+
+margin-top:60px;
+padding:20px;
+background:#0D3B66;
+color:white;
+text-align:center;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+Visa Assistance
+
+</header>
+
+<section class="hero">
+
+<h2>Choose Your Destination</h2>
+
+<p>Select the country where you want to apply for a visa.</p>
+
+</section>
+
+<section class="country-grid">
+
+<a href="mongo.html" class="country"
+   style="background-image:url('mongo.jpg');">
+
+    <div class="country-content">
+        <h3>Mongolia</h3>
+        <p>Tourist Visa</p>
+    </div>
+
+</a>
+
+<a href="thai.html" class="country"
+   style="background-image:url('thai_img.webp');">
+
+    <div class="country-content">
+        <h3>Thailand</h3>
+        <p>Tourist Visa</p>
+    </div>
+
+</a>
+
+
+<a href="china.html" class="country"
+   style="background-image:url('china_img.jpg');">
+
+    <div class="country-content">
+        <h3>China</h3>
+        <p>Tourist Visa</p>
+    </div>
+
+</a>
+
+
+<a href="malaysia.html" class="country"
+   style="background-image:url('mal.jpg');">
+
+    <div class="country-content">
+        <h3>Malaysia</h3>
+        <p>Tourist Visa</p>
+    </div>
+
+</a>
+
+</section>
+
+<footer>
+
+© 2025 Flyer Travel Express Ltd.
+
+</footer>
+
+</body>
+</html>
